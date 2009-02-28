@@ -1,7 +1,7 @@
 from setuptools import setup
 from distutils.command.install import INSTALL_SCHEMES
 import sys
-import sneakylang
+import qczechtile
 
 required_python_version = '2.5'
 
