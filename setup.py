@@ -28,11 +28,10 @@ cp_license="BSD"
 packages=[
     "qczechtile"
 ]
-#download_url="http://www.almad.net/download/sneakylang/sneakylang-"+version+".tar.gz"
+
 data_files=[]
-###############################################################################
-# end arguments for setup
-###############################################################################
+scripts = ['bin/czechtile']
+
 
 def main():
     if sys.version < required_python_version:
@@ -47,6 +46,7 @@ def main():
 
     setup(
         name=name,
+        scripts=scripts,
         version=version,
         description=desc,
         long_description=long_desc,
