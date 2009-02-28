@@ -30,7 +30,7 @@ packages=[
 ]
 
 data_files=[]
-scripts = ['bin/czechtile']
+scripts = ['bin/qczechtile']
 
 
 def main():
