@@ -56,7 +56,7 @@ def main():
         url=url,
         license=cp_license,
         packages=packages,
-        download_url=download_url,
+#        download_url=download_url,
         data_files=data_files,
     )
 
