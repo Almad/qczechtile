@@ -1,4 +1,6 @@
-from setuptools import setup
+from cx_Freeze import setup, Executable
+
+#from setuptools import setup
 from distutils.command.install import INSTALL_SCHEMES
 import sys
 import qczechtile
@@ -31,6 +33,7 @@ packages=[
 
 data_files=[]
 scripts = ['bin/qczechtile']
+executables = [Executable(script='bin/qczechtile', packages=['sip'])]
 
 
 def main():
@@ -58,6 +61,7 @@ def main():
         packages=packages,
 #        download_url=download_url,
         data_files=data_files,
+        executables=executables,
     )
 
 if __name__ == "__main__":
